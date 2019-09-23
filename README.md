@@ -1,5 +1,7 @@
 # test-task-vue
 
+### [GitHub Pages Demo](https://jansagat.github.io/test-task-vue/)
+
 ## Project setup
 ```
 yarn install
