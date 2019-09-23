@@ -8,6 +8,10 @@ const getBids = () => {
   return ls.get(BIDS_KEY).map(bid => new Bid(bid))
 }
 
+const isBidsExists = () => {
+  return !!ls.get(BIDS_KEY)
+}
+
 const setBids = value => {
   ls.set(BIDS_KEY, value)
 }
@@ -43,7 +47,7 @@ const deleteBid = id => {
 }
 
 const initConfig = () => {
-  if (!getBids()) {
+  if (!isBidsExists()) {
     setBids(INITIAL_VALUE)
   }
 }
