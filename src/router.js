@@ -12,6 +12,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Main',
+      redirect: { name: 'BidsList' }
+    },
+    {
+      path: '/bids',
       name: 'BidsList',
       component: BidsList
     },
