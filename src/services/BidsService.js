@@ -1,8 +1,9 @@
 import ls from '@/utils/localStorageManager'
 import Bid from '../entities/Bid'
+import data from '../data.json'
 
 const BIDS_KEY = 'APP_BIDS'
-const INITIAL_VALUE = []
+const INITIAL_VALUE = data
 
 const getBids = () => {
   return ls.get(BIDS_KEY).map(bid => new Bid(bid))
